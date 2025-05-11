@@ -4,7 +4,7 @@ A Flutter app that fetches and displays a list of articles from a public API.
 
 ---
 
-## 🚀 Features
+### Features
 - List of articles
 - Search functionality
 - Detail view
@@ -14,7 +14,7 @@ A Flutter app that fetches and displays a list of articles from a public API.
 
 ---
 
-## 🛠 Setup Instructions
+### Setup Instructions
 
 ### 1. Clone the repository
 ```bash

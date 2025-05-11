@@ -18,7 +18,7 @@ A Flutter app that fetches and displays a list of articles from a public API.
 
 ### 1. Clone the repository
 ```bash
-git clone <your-github-repo-link>
+git clone https://github.com/armaan277/BharatNXT_Task.git
 cd flutter_article_app
 
 ### 2. Install dependencies

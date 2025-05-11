@@ -1,16 +1,49 @@
-# bharatnxt_task
+# 📰 Flutter Article App
 
-A new Flutter project.
+A Flutter app that fetches and displays a list of articles from a public API.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🚀 Features
+- List of articles
+- Search functionality
+- Detail view
+- Favorite articles with local persistence (bonus feature)
+- Pull-to-refresh
+- Responsive UI
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 🛠 Setup Instructions
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 1. Clone the repository
+```bash
+git clone <your-github-repo-link>
+cd flutter_article_app
+
+### 2. Install dependencies
+```bash
+flutter pub get
+
+### 3. Run the app
+flutter run
+
+
+Tech Stack
+Flutter SDK: 3.29.3
+
+State Management: Provider
+HTTP Client: http
+Persistence: shared_preferences
+Proper Error Handling : fpdart
+
+### State Management Explanation
+This project uses Provider for managing app state such as articles, search filtering, and favorite toggling. The HomeViewModel class extends ChangeNotifier, exposing observable fields to the UI. Updates like toggling favorites or filtering articles through search automatically notify the UI to reflect changes.
+
+### Persistence
+Favorite articles are persisted using shared_preferences. When the user marks an article as favorite, its ID is stored locally, and the state is retained even after app restarts.
+
+###Known Issues / Limitations
+API errors are handled minimally (can be improved with proper error dialogs).
+UI responsiveness may vary slightly on tablets.
+

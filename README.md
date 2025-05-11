@@ -42,8 +42,3 @@ This project uses Provider for managing app state such as articles, search filte
 
 ### Persistence
 Favorite articles are persisted using shared_preferences. When the user marks an article as favorite, its ID is stored locally, and the state is retained even after app restarts.
-
-###Known Issues / Limitations
-API errors are handled minimally (can be improved with proper error dialogs).
-UI responsiveness may vary slightly on tablets.
-
